@@ -37,9 +37,18 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(SDL3)
 
+FetchContent_Declare(
+	volk
+	GIT_REPOSITORY https://github.com/zeux/volk.git
+	GIT_TAG 1.4.304
+)
+FetchContent_MakeAvailable(volk)
+
 target_link_libraries(imgui PUBLIC
 	SDL3::SDL3
+	volk
 }
+
 
 
 
