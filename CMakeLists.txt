@@ -49,6 +49,9 @@ target_link_libraries(imgui PUBLIC
 	volk
 }
 
+target_include_directories(imgui PUBLIC
+	${CMAKE_CURRENT_SOURCE_DIR}
+)
 
 
 
