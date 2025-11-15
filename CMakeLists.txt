@@ -47,11 +47,12 @@ FetchContent_MakeAvailable(volk)
 target_link_libraries(imgui PUBLIC
 	SDL3::SDL3
 	volk
-}
+)
 
 target_include_directories(imgui PUBLIC
 	${CMAKE_CURRENT_SOURCE_DIR}
 )
+
 
 
 
