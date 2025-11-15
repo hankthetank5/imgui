@@ -28,3 +28,14 @@ add_library(imgui STATIC
 )
 
 target_compile_definitions(imgui PRIVATE IMGUI_IMPL_VULKAN_USE_VOLK)
+
+FetchContent_Declare(
+	SDL3
+	GIT_REPOSITORY https://github.com/libsdl-org/SDL.git
+	GIT_TAG release-3.2.26
+)
+FetchContent_MakeAvailable(SDL3)
+
+target_link_libraries(imgui PRIVATE
+	SDL3::SDL3
+}
