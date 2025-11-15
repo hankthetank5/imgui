@@ -26,3 +26,5 @@ add_library(imgui STATIC
 	imgui_impl_sdl3.cpp
 	imgui_impl_vulkan.cpp
 )
+
+target_compile_definitions(imgui PRIVATE IMGUI_IMPL_VULKAN_USE_VOLK)
