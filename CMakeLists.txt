@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.10)
-include (FetchContent)
 
 project (imgui)
 
@@ -26,6 +25,7 @@ target_link_libraries(imgui PUBLIC
 target_include_directories(imgui PUBLIC
 	${CMAKE_CURRENT_SOURCE_DIR}
 )
+
 
 
 
