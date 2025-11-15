@@ -37,6 +37,7 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(SDL3)
 
 target_link_libraries(imgui PUBLIC
-	SDL3::SDL3
+	SDL3::SDL3-static
 }
+
 
